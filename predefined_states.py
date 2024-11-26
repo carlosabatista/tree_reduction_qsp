@@ -64,19 +64,3 @@ def Separable_States_Qubits():
   #state = np.kron(state,s4)
   
   return state
-
-#https://arxiv.org/pdf/2409.01418
-def State_Hanyu_Wang():
-  state = np.zeros(8)
-  norm_factor = 1./np.sqrt(8)
-
-  state[0] = np.sqrt(2)
-  state[2] = 1
-  state[3] = 1
-  state[4] = -1
-  state[5] = 1
-  state[7] = np.sqrt(2)
-  state = state/norm_factor
-
-  return state
-
